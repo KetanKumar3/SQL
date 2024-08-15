@@ -1,0 +1,39 @@
+# in this we will create course Table and column will be (id,name,admission_no,course_name,branch_name,batch_year,mobile_no)
+
+# Step1 : we will create Database Of Name COURSE
+CREATE DATABASE COURSE;
+
+# Step2 : we will create Table of Name student and inside student table we will write column name with datatype which type of data we want to store.
+CREATE TABLE student(
+    id INT,
+    name VARCHAR(50),
+    admission_no VARCHAR(50),
+    course_name VARCHAR(50),
+    branch_name VARCHAR(50),
+    batch_year VARCHAR(50),
+    mobile_no VARCHAR(50)
+);
+
+
+# Step3 : After Create Schema we will insert data.
+INSERT INTO student
+(id,name,admission_no,course_name,branch_name,batch_year,mobile_no)
+VALUES
+(1,"Ketan","21SCSE1010739","B.Tech","CSE","2021-2025","1234567899"),
+(2,"Kanhaiya","22SOAG1010006","B.Tech","CSE","2022-2026","1234567899"),
+(3,"Rishav","21SCSE1010801","B.Tech","CSE","2021-2025","1234567899"),
+(4,"Ankit","21SCSE1010730","B.Tech","CSE","2021-2025","1234567899");
+
+
+# Step4 : Now we can see data in table format.
+SELECT * FROM student;
+
+
+output :
+---------------------------------------------------------------------------------
+| id	name	    admission_no	 course_name	branch_name	batch_year	mobile_no   |
+| 1	  Ketan	    21SCSE1010739	 B.Tech	      CSE	        2021-2025	  1234567899  |
+| 2	  Kanhaiya	22SOAG1010006	 B.Tech	      CSE	        2022-2026	  1234567899  |
+| 3	  Rishav	  21SCSE1010801	 B.Tech     	CSE       	2021-2025	  1234567899  |
+| 4	  Ankit	    21SCSE1010730	 B.Tech	      CSE       	2021-2025	  1234567899  |
+---------------------------------------------------------------------------------
