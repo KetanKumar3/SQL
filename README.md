@@ -34,9 +34,3 @@ SQL is used for performing CRUD operations, which stands for:
 - **DELETE**: To delete databases, tables, or specific data points (rows).
 
 **Note**: SQL keywords are NOT case-sensitive. For example, `SELECT` is the same as `select` in SQL.
-
-
-## Contact
-
-For any questions or inquiries, please open an issue or reach out via email.
-
