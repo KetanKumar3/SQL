@@ -1,0 +1,50 @@
+# Question Link : "https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true"
+
+# Question : Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+
+# Solution 1
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE 
+( 
+    CITY LIKE 'a%' or 
+    CITY LIKE 'e%' or
+    CITY LIKE 'i%' or 
+    CITY LIKE 'o%' or 
+    CITY LIKE 'u%' or 
+    CITY LIKE 'A%' or 
+    CITY LIKE 'E%' or 
+    CITY LIKE 'I%' or 
+    CITY LIKE 'O%' or 
+    CITY LIKE 'U%'
+)
+AND
+(
+    CITY LIKE '%a' or 
+    CITY LIKE '%e' or
+    CITY LIKE '%i' or 
+    CITY LIKE '%o' or 
+    CITY LIKE '%u' or 
+    CITY LIKE '%A' or 
+    CITY LIKE '%E' or 
+    CITY LIKE '%I' or 
+    CITY LIKE '%O' or 
+    CITY LIKE '%U'
+)
+
+# Solution 2
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE 
+(
+    LOWER(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u')
+)
+AND
+(
+    LOWER(SUBSTR(CITY,LENGTH(CITY),1)) IN ('a','e','i','o','u')
+)
+
+
+
