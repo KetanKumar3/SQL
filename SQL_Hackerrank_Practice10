@@ -1,0 +1,9 @@
+-- Question Link : "https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true"
+
+-- Question : Query the total population of all cities in CITY where District is California.
+
+-- Solution
+
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';
