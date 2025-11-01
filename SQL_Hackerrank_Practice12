@@ -1,0 +1,8 @@
+-- Question Link : "https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true"
+
+-- Question : Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+-- Solution
+
+SELECT AVG(POPULATION)
+FROM CITY;
